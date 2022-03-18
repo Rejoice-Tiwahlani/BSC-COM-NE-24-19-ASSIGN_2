@@ -117,32 +117,83 @@ public class MyHouseLights extends Application{
        room7.setStroke(Color.BLACK);
        room7.setX(280);
        room7.setY(165);
+       //adding a label to the created window
        Label room7Label = new Label("Room 7");
        room7Label.setLayoutX(340);
        room7Label.setLayoutY(210);
        pane.getChildren().addAll(room7, room7Label);
 
        //Adding the buttons to the window
-       // button 1
-       Button buttonRoomAll = new Button("AllRooms ON/OFF");
+       // button 1, this one is controlling all the rooms 
+        Button buttonRoomAll = new Button("AllRooms ON/OFF");
         buttonRoomAll.setPrefSize(120, 20);
         buttonRoomAll.setLayoutY(400);
         buttonRoomAll.setLayoutX(130);
         pane.getChildren().add(buttonRoomAll);
 
-        //button 2
-        Button buttonRoom2 = new Button("Room 2");
+        //button for comtrolling room 2
+        Button buttonRoom2 = new Button("Room 2 ON/OFF");
         buttonRoom2.setPrefSize(120, 20);
         buttonRoom2.setLayoutY(400);
         buttonRoom2.setLayoutX(260);
         pane.getChildren().add(buttonRoom2);
 
-        //button 3
-        Button buttonRoom1and2 = new Button("Room 1&2");
+        //Buttton for controlling room 5 
+        Button buttonRoom5 = new Button("Room 5 ON/OFF");
+        buttonRoom5.setPrefSize(120, 20);
+        buttonRoom5.setLayoutY(400);
+        buttonRoom5.setLayoutX(390);
+        pane.getChildren().add(buttonRoom5);
+
+
+        //button for controlling room 1 and 2
+        Button buttonRoom1and2 = new Button("Room 1&2 ON/OFF");
         buttonRoom1and2.setPrefSize(120, 20);
         buttonRoom1and2.setLayoutY(440);
         buttonRoom1and2.setLayoutX(130);
         pane.getChildren().add(buttonRoom1and2);
+
+        //Button for controlling room 3
+        Button buttonRoom3 = new Button("Room 3 ON/OFF");
+        buttonRoom3.setPrefSize(120, 20);
+        buttonRoom3.setLayoutY(440);
+        buttonRoom3.setLayoutX(260);
+        pane.getChildren().add(buttonRoom3);
+
+        //Button for room 6 
+        Button buttonRoom6 = new Button("Room 6 ON/OFF");
+        buttonRoom6.setPrefSize(120, 20);
+        buttonRoom6.setLayoutY(440);
+        buttonRoom6.setLayoutX(390);
+        pane.getChildren().add(buttonRoom6);
+
+        //Button for room 1
+        Button buttonRoom1 = new Button("Room 1 ON/OFF");
+        buttonRoom1.setPrefSize(120, 20);
+        buttonRoom1.setLayoutY(480);
+        buttonRoom1.setLayoutX(130);
+        pane.getChildren().add(buttonRoom1);
+
+        //Button for room 4 
+        Button buttonRoom4 = new Button("Room 4 ON/OFF");
+        buttonRoom4.setPrefSize(120, 20);
+        buttonRoom4.setLayoutY(480);
+        buttonRoom4.setLayoutX(260);
+        pane.getChildren().add(buttonRoom4);
+
+        //Button 5 for room 7
+        Button buttonRoom7 = new Button("Room 7 ON/OFF");
+        buttonRoom7.setPrefSize(120, 20);
+        buttonRoom7.setLayoutY(480);
+        buttonRoom7.setLayoutX(390);
+        pane.getChildren().add(buttonRoom7);
+
+
+
+
+
+
+        
 
 
 
