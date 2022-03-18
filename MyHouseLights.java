@@ -42,6 +42,13 @@ public class MyHouseLights extends Application{
 
         pane.getChildren().addAll(file, edit, format, view, help);
 
+        Rectangle room1 = new Rectangle(100,120);
+        room1.setFill(Color.YELLOW);
+        room1.setStroke(Color.BLACK);
+        room1.setX(90);
+        room1.setY(60);
+        pane.getChildren().add(room1);
+
         
 
         Scene scene = new Scene(pane,600,600);
