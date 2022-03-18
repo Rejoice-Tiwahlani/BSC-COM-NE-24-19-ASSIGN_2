@@ -53,7 +53,7 @@ public class MyHouseLights extends Application{
         room1.setY(60);
         Label room1Label = new Label("Room 1");
         room1Label.setLayoutX(140);
-        room1Label.setLayoutY(80);
+        room1Label.setLayoutY(100);
         pane.getChildren().addAll(room1,room1Label);
 
         //The second room
@@ -75,7 +75,7 @@ public class MyHouseLights extends Application{
         room3.setY(60);
         Label room3Label = new Label("Room 3");
         room3Label.setLayoutX(200);
-        room3Label.setLayoutY(100);
+        room3Label.setLayoutY(110);
         pane.getChildren().addAll(room3, room3Label);
 
         // The fourth room
@@ -86,7 +86,7 @@ public class MyHouseLights extends Application{
         room4.setY(60);
         Label room4Label = new Label("Room 4");
         room4Label.setLayoutX(260);
-        room4Label.setLayoutY(120);
+        room4Label.setLayoutY(110);
         pane.getChildren().addAll(room4, room4Label);
 
         // The fifth room
@@ -97,7 +97,7 @@ public class MyHouseLights extends Application{
         room5.setY(60);
         Label room5Label = new Label("Room 5");
         room5Label.setLayoutX(320);
-        room5Label.setLayoutY(110);
+        room5Label.setLayoutY(120);
         pane.getChildren().addAll(room5, room5Label);
 
         // The sixth room
@@ -106,7 +106,10 @@ public class MyHouseLights extends Application{
        room6.setStroke(Color.BLACK);
        room6.setX(190);
        room6.setY(165);
-       pane.getChildren().add(room6);
+       Label room6Label = new Label("Room 6");
+       room6Label.setLayoutX(220);
+       room6Label.setLayoutY(200);
+       pane.getChildren().addAll(room6, room6Label);
 
        //The seventh and last room
        Rectangle room7 = new Rectangle(110,110);
@@ -114,7 +117,10 @@ public class MyHouseLights extends Application{
        room7.setStroke(Color.BLACK);
        room7.setX(280);
        room7.setY(165);
-       pane.getChildren().add(room7);
+       Label room7Label = new Label("Room 7");
+       room7Label.setLayoutX(340);
+       room7Label.setLayoutY(210);
+       pane.getChildren().addAll(room7, room7Label);
 
        //Adding the buttons to the window
        // button 1
