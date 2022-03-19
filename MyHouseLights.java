@@ -190,13 +190,6 @@ public class MyHouseLights extends Application{
 
 
 
-
-
-
-        
-
-
-
         Scene scene = new Scene(pane,600,600);
         primaryStage.setTitle("My House Lights");
         primaryStage.setScene(scene);
