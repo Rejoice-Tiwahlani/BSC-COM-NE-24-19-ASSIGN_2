@@ -32,14 +32,14 @@ public class MyHouseLights extends Application{
         Menu view = new Menu("View");
         Menu help = new Menu("Help");
 
-        file.getItems().addAll(new MenuItem("Rejoce is programmer"), new MenuItem("Exit"));
+        file.getItems().addAll(new MenuItem("Rejoce is a programmer"), new MenuItem("Exit"));
 
         MenuBar menuBar = new MenuBar(file, edit, format, view, help);
 
 
         //The first room
         Rectangle room1 = new Rectangle(100,120);
-        room1.setFill(Color.YELLOW);
+        room1.setFill(Color.GRAY);
         room1.setStroke(Color.BLACK);
         room1.setX(90);
         room1.setY(60);
@@ -50,7 +50,7 @@ public class MyHouseLights extends Application{
 
         //The second room
         Rectangle room2 = new Rectangle(120,40);
-        room2.setFill(Color.GREEN);
+        room2.setFill(Color.GRAY);
         room2.setStroke(Color.BLACK);
         room2.setX(190);
         room2.setY(125);
@@ -61,7 +61,7 @@ public class MyHouseLights extends Application{
 
         //The third room
         Rectangle room3 = new Rectangle(60,85);
-        room3.setFill(Color.ORANGE);
+        room3.setFill(Color.GRAY);
         room3.setStroke(Color.BLACK);
         room3.setX(190);
         room3.setY(60);
@@ -72,7 +72,7 @@ public class MyHouseLights extends Application{
 
         // The fourth room
         Rectangle room4 = new Rectangle(60,85);
-        room4.setFill(Color.ORANGE);
+        room4.setFill(Color.GRAY);
         room4.setStroke(Color.BLACK);
         room4.setX(250);
         room4.setY(60);
@@ -83,7 +83,7 @@ public class MyHouseLights extends Application{
 
         // The fifth room
         Rectangle room5 = new Rectangle(80,105);
-        room5.setFill(Color.YELLOW);
+        room5.setFill(Color.GRAY);
         room5.setStroke(Color.BLACK);
         room5.setX(310);
         room5.setY(60);
@@ -94,7 +94,7 @@ public class MyHouseLights extends Application{
 
         // The sixth room
         Rectangle room6 = new Rectangle(90,110);
-       room6.setFill(Color.RED);
+       room6.setFill(Color.GRAY);
        room6.setStroke(Color.BLACK);
        room6.setX(190);
        room6.setY(165);
@@ -105,7 +105,7 @@ public class MyHouseLights extends Application{
 
        //The seventh and last room
        Rectangle room7 = new Rectangle(110,110);
-       room7.setFill(Color.YELLOW);
+       room7.setFill(Color.GRAY);
        room7.setStroke(Color.BLACK);
        room7.setX(280);
        room7.setY(165);
@@ -194,8 +194,9 @@ public class MyHouseLights extends Application{
         RoomHandler handler7 = new RoomHandler(room7, Color.YELLOW);
         buttonRoom7.setOnAction(handler7);
     
-        buttonRoom1and2.setOnAction(new Handler1And2(handler1, handler2));
-        // buttonRoomAll.setOnAction(new Handler1And2(handler1, handler2, handler3, handler4, handler5, handler6, handler7));
+       
+        buttonRoom1and2.setOnAction(new SwitchHandler(handler1, handler2));
+        buttonRoomAll.setOnAction(new SwitchHandler(handler1, handler2, handler3, handler4, handler5, handler6, handler7));
 
         BorderPane borderPane = new BorderPane();
         borderPane.setTop(menuBar);
