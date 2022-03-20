@@ -115,15 +115,16 @@ public class MyHouseLights extends Application{
        room7Label.setLayoutY(210);
        pane.getChildren().addAll(room7, room7Label);
 
+
        //Adding the buttons to the window
-       // button 1, this one is controlling all the rooms 
+       //Button 1, this one is controlling all the rooms 
         Button buttonRoomAll = new Button("AllRooms ON/OFF");
         buttonRoomAll.setPrefSize(120, 20);
         buttonRoomAll.setLayoutY(400);
         buttonRoomAll.setLayoutX(130);
         pane.getChildren().add(buttonRoomAll);
 
-        //button for controlling room 2
+        //Button for controlling room 2
         Button buttonRoom2 = new Button("Room 2 ON/OFF");
         buttonRoom2.setPrefSize(120, 20);
         buttonRoom2.setLayoutY(400);
@@ -141,8 +142,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler5 = new RoomHandler(room5, Color.YELLOW);
         buttonRoom5.setOnAction(handler5);
 
-
-        //button for controlling room 1 and 2
+        //Button for controlling room 1 and 2
         Button buttonRoom1and2 = new Button("Room 1&2 ON/OFF");
         buttonRoom1and2.setPrefSize(120, 20);
         buttonRoom1and2.setLayoutY(440);
@@ -158,7 +158,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler3 = new RoomHandler(room3, Color.ORANGE);
         buttonRoom3.setOnAction(handler3);
 
-        //Button for room 6 
+        //Button for controlling room 6 
         Button buttonRoom6 = new Button("Room 6 ON/OFF");
         buttonRoom6.setPrefSize(120, 20);
         buttonRoom6.setLayoutY(440);
@@ -167,7 +167,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler6 = new RoomHandler(room6, Color.RED);
         buttonRoom6.setOnAction(handler6);
 
-        //Button for room 1
+        //Button for controlling room 1
         Button buttonRoom1 = new Button("Room 1 ON/OFF");
         buttonRoom1.setPrefSize(120, 20);
         buttonRoom1.setLayoutY(480);
@@ -176,7 +176,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler1 = new RoomHandler(room1, Color.YELLOW);
         buttonRoom1.setOnAction(handler1);
 
-        //Button for room 4 
+        //Button for controlling room 4 
         Button buttonRoom4 = new Button("Room 4 ON/OFF");
         buttonRoom4.setPrefSize(120, 20);
         buttonRoom4.setLayoutY(480);
@@ -185,7 +185,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler4 = new RoomHandler(room4, Color.ORANGE);
         buttonRoom4.setOnAction(handler4);
 
-        //Button 5 for room 7
+        //Button for controlling room 7
         Button buttonRoom7 = new Button("Room 7 ON/OFF");
         buttonRoom7.setPrefSize(120, 20);
         buttonRoom7.setLayoutY(480);
@@ -203,8 +203,8 @@ public class MyHouseLights extends Application{
         borderPane.setCenter(pane);
 
         Scene scene = new Scene(borderPane, 600, 600);
-        primaryStage.setTitle("My House");
-        primaryStage.setScene(scene);
+        primaryStage.setTitle("My House"); // setting the title of the stage
+        primaryStage.setScene(scene);// placing the scene on the stage
         primaryStage.setResizable(false);
         primaryStage.show();
 
