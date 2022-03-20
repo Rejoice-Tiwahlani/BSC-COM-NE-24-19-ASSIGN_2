@@ -32,7 +32,7 @@ public class MyHouseLights extends Application{
         Menu view = new Menu("View");
         Menu help = new Menu("Help");
 
-        file.getItems().addAll(new MenuItem("Rejoce is a programmer"), new MenuItem("Exit"));
+        file.getItems().addAll(new MenuItem("Rejoice is a programmer"), new MenuItem("Exit"));
 
         MenuBar menuBar = new MenuBar(file, edit, format, view, help);
 
@@ -194,7 +194,7 @@ public class MyHouseLights extends Application{
         RoomHandler handler7 = new RoomHandler(room7, Color.YELLOW);
         buttonRoom7.setOnAction(handler7);
     
-       
+       //handling room 1&2 jointly as well as all the rooms
         buttonRoom1and2.setOnAction(new SwitchHandler(handler1, handler2));
         buttonRoomAll.setOnAction(new SwitchHandler(handler1, handler2, handler3, handler4, handler5, handler6, handler7));
 
@@ -203,8 +203,9 @@ public class MyHouseLights extends Application{
         borderPane.setCenter(pane);
 
         Scene scene = new Scene(borderPane, 600, 600);
-        primaryStage.setTitle("My House Lights");
+        primaryStage.setTitle("My House");
         primaryStage.setScene(scene);
+        primaryStage.setResizable(false);
         primaryStage.show();
 
     }

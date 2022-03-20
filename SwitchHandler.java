@@ -14,7 +14,7 @@ public class SwitchHandler implements EventHandler<ActionEvent>{
         
     }
 
-
+    // overriding the default handle method in the EventHandler class
     @Override
     public void handle(ActionEvent event){
         if(allRoomsAreOff()){
@@ -35,7 +35,7 @@ public class SwitchHandler implements EventHandler<ActionEvent>{
             this.allRooms[i].off();
         }
     }
-
+// returning true if all the lights are off and false if that is not the case
     public boolean allRoomsAreOff(){
         for(int i=0; i<allRooms.length; i++){
             if(this.allRooms[i].bulbIsOn()){
